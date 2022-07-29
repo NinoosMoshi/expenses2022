@@ -17,7 +17,7 @@ public class ExpenseController {
 
     @GetMapping("/all")
     public String showExpenseList(Model model) {
-//        model.addAttribute("expenses",expenseService.getAllExpenses());
+        model.addAttribute("expenses",expenseService.getAllExpenses());
         return "expenses-list";
     }
 }
